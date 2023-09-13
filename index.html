@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Edge-a-Sketch</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="title">Edge-a-Sketch</h1>
+    <main class="main">
+      <div class="settings-container">
+        <h2>Settings</h2>
+        <button id="black-mode">Black</button>
+        <button id="rainbow-mode">Rainbow</button>
+        <button id="eraser-mode">Eraser</button>
+        <button id="clear-mode">Clear</button>
+        <div class="slider-container">
+          <p id="rangeValue">16 x 16</p>
+          <input
+            id="grid-size-slider"
+            type="range"
+            min="1"
+            max="100"
+            step="1"
+            value="16"
+            oninput="rangeValue.innerText = `${this.value} x ${this.value}`"
+          />
+        </div>
+      </div>
+      <div class="sketch"></div>
+    </main>
+  </body>
+</html>

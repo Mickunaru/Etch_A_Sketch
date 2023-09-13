@@ -1,0 +1,79 @@
+body {
+  color: white;
+  background-color: #1e1b4b;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+button {
+  background: #ededed;
+  background-color: #1e1b4b;
+  font-weight: bolder;
+  color: white;
+  border: solid 3px #c7d2fe;
+  border-radius: 75px;
+  font-size: large;
+  transition-duration: 250ms;
+  width: 150px;
+  height: 50px;
+}
+
+button:active {
+  color: #1e1b4b;
+  background: #e0e7ff;
+  outline: none;
+}
+
+.square {
+  background-color: white;
+}
+
+.sketch {
+  display: grid;
+  background-color: F0F8FF;
+  border: 4mm ridge #6366f1;
+  height: 500px;
+  width: 500px;
+}
+
+.title {
+  font-size: 60px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 80px;
+  max-width: 1000px;
+  margin: 0 auto 0 auto;
+}
+
+@media (max-width: 900px) {
+  .main {gap: 20px;}
+}
+
+@media (max-width: 750px) {
+  .main {
+    flex-direction: column-reverse;
+  }
+}
